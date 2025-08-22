@@ -104,6 +104,8 @@ multi-nginx-websites/
 │   ├── inance-html/        # Business website files
 │   ├── mediplus-lite/      # Medical website files
 │   └── templatemo_589_lugx_gaming/  # Gaming website files
+├── scripts/                 # Utility scripts
+│   └── setup.sh            # Initial setup script
 └── docs/                    # Documentation
     └── deployment.md        # Deployment guide
 ```

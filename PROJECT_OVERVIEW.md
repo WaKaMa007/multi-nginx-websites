@@ -32,18 +32,13 @@ This project demonstrates how to run multiple Nginx web servers using Docker Com
 ```
 multi-nginx-websites/
 ├── 📄 README.md                 # Main project documentation
-├── 📄 LICENSE                   # MIT license
 ├── 📄 PROJECT_OVERVIEW.md       # This file
 ├── 🐳 docker-compose.yml        # Multi-container orchestration
 ├── 🐳 Dockerfile               # Nginx container definition
-├── 🚫 .dockerignore            # Docker build exclusions
-├── 🚫 .gitignore              # Git exclusions
 ├── 📁 website/                 # Website content directories
 │   ├── 📁 inance-html/        # Business website files
 │   ├── 📁 mediplus-lite/      # Medical website files
 │   └── 📁 templatemo_589_lugx_gaming/  # Gaming website files
-├── 📁 scripts/                 # Utility scripts
-│   └── 🚀 setup.sh            # Initial setup script
 └── 📁 docs/                    # Documentation
     └── 📚 deployment.md        # Production deployment guide
 ```
@@ -52,7 +47,7 @@ multi-nginx-websites/
 
 ```bash
 # 1. Clone and setup
-git clone <your-repo-url>
+git clone docs https://github.com/WaKaMa007/multi-nginx-websites.git
 cd multi-nginx-websites
 ./scripts/setup.sh
 
