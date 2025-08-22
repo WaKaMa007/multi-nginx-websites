@@ -1,0 +1,68 @@
+version: '1.29.0'
+
+services:
+  inance:
+    container_name: inance
+    image: apache2
+    hostname: inance
+    domainname: inance.com
+    build:
+      context: .
+      dockerfile: Dockerfile      
+      args: 
+        PARKAGES: "nano wget curl"
+    ports:
+      - "6060:80"
+    volumes:
+      - ./website/inance-html:/var/www/html/
+    networks:
+      - apache2-network
+    environment:
+      - WEB_EMV=inance-apache
+      - APP_VERSION=1.0
+
+  mediplus:
+    container_name: mediplus
+    image: apache2
+    hostname: mediplus
+    domainname: mediplus.com
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args: 
+        PARKAGES: "nano wget curl"
+    ports:
+      - "7070:80"
+    volumes:
+      - ./website/mediplus-lite:/var/www/html/
+    networks:
+      - apache2-network
+    environment:
+      - WEB_EMV=mediplus-apache
+      - APP_VERSION=1.0
+
+  gaming:
+    container_name: gaming
+    image: apache2
+    hostname: gaming
+    domainname: gaming.com
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args: 
+        PARKAGES: "nano wget curl"
+    ports:
+      - "8080:80"
+    volumes:
+      - ./website/templatemo_589_lugx_gaming:/var/www/html/
+    networks:
+      - apache2-network
+    environment:  
+      - WEB_EMV=gaming-apache
+      - APP_VERSION=1.0
+
+networks:
+  apache2-network:
+    driver: bridge
+
+        
