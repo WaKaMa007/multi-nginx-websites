@@ -13,7 +13,7 @@ RUN apt-get update -y && \
     apt-get clean
 
 # Copy the local index.html file to Apache web root directory
-COPY ./volume/index.html /var/www/html/  
+# COPY ./volume/index.html /var/www/html/  
 
 # Expose port 80 for HTTP traffic
 EXPOSE 80
