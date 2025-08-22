@@ -212,9 +212,6 @@ docker top inance
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -222,12 +219,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Docker for containerization
 - The open-source community for inspiration
 
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Open an issue on GitHub
-- Check the troubleshooting section above
-- Review Docker and Nginx documentation
 
 ---
 
