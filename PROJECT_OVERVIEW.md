@@ -23,7 +23,7 @@ This project demonstrates how to run multiple Nginx web servers using Docker Com
                                  │
                     ┌─────────────────┐
                     │  Docker Network │
-                    │ (apache2-network)│
+                    │ (web-network)│
                     └─────────────────┘
 ```
 
